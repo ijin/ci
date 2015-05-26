@@ -12,7 +12,7 @@ deployment:
   dev:
     branch: master
     commands:
-      - |
+      - |-
         echo ${slack_hook}
         echo 0
       - echo ${SLACK_HOOK}
