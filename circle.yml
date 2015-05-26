@@ -11,6 +11,5 @@ deployment:
   dev:
     branch: master
     commands:
-      pre:
-        - echo 'deploy'
+      - echo 'deploy'
 
