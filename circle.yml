@@ -6,6 +6,7 @@ dependencies:
 test:
   pre:
   override:
+    - echo 'testing'
   post:
 deployment:
   dev:
