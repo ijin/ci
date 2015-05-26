@@ -1,0 +1,16 @@
+machine:
+  environment:
+dependencies:
+  pre:
+  cache_directories:
+test:
+  pre:
+  override:
+  post:
+deployment:
+  dev:
+    branch: master
+    commands:
+      pre:
+        - echo 'deploy'
+
