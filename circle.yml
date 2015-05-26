@@ -17,7 +17,7 @@ deployment:
         echo 1
       - |
         SHA1=`echo ${CIRCLE_SHA1} | cut -c1-7`
-        curl -X POST --data-urlencode 'payload={"text": "'"Planet has been Terraformed for ${CIRCLE_BRANCH} (<${CIRCLE_COMPARE_URL}|${SHA1}>) by ${CIRCLE_USERNAME} !!"'", "username": "Terraformer", "icon_url": "https://raw.githubusercontent.com/hashicorp/terraform/master/website/source/assets/images/logo-static.png"}' https://hooks.slack.com/services/${SLACK_HOOK}
+        curl -X POST --data-urlencode 'payload={"text": "'"Planet has been *terraformed* for ${CIRCLE_BRANCH} (<${CIRCLE_COMPARE_URL}|${SHA1}>) by ${CIRCLE_USERNAME} !!"'", "username": "Terraformer", "icon_url": "https://raw.githubusercontent.com/hashicorp/terraform/master/website/source/assets/images/logo-static.png"}' https://hooks.slack.com/services/${SLACK_HOOK}
 #        curl -X POST --data-urlencode 'payload={"text": "Terraformed!!", "username": "Terraformer", "icon_url": "https://raw.githubusercontent.com/hashicorp/terraform/master/website/source/assets/images/logo-static.png"}' https://hooks.slack.com/services/${SLACK_HOOK}
 
 
