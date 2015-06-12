@@ -18,6 +18,7 @@ before_script:
 script:
   - docker run busybox ls -la
   - docker run ubuntu:12.04 ls -al
-  - docker run ubuntu:12.04 /sbin/ifconfig
+  - docker run ubuntu:12.04 ifconfig
+  - docker run ubuntu:12.04 netstat -ant
 
 
