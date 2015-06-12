@@ -19,3 +19,4 @@ script:
   - CONTAINER_ID=$(docker run -d docker-ssh)
   - docker inspect $CONTAINER_ID | grep IPAddress | awk '{ print $2 }' | tr -d ',"'
 
+
