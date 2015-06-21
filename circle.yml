@@ -1,5 +1,7 @@
 machine:
   environment:
+  ruby:
+    version: 2.2.2
   services:
     - docker
 dependencies:
@@ -7,6 +9,9 @@ dependencies:
   cache_directories:
 test:
   pre:
+    - rvm version
+    - rvm list known
+    - ruby -v
     - docker info
   override:
     - echo 'testing'
