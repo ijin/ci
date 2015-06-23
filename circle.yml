@@ -9,7 +9,7 @@ dependencies:
   cache_directories:
 test:
   pre:
-    - env
+    - env | sort -n
     - rvm version
     - rvm list known
     - ruby -v
