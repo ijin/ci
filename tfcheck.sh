@@ -10,13 +10,13 @@ echo $1
 
 SHA1=`echo ${CIRCLE_SHA1} | cut -c1-7`
 
-echo $1
-
 if [ $1 -eq 0 ]; then
+    echo $1
     export SL_COLOR="good"
     export SL_TEXT="Planet has been *terraformed* for ${CIRCLE_BRANCH} (<${CIRCLE_COMPARE_URL}|${SHA1}>) by ${CIRCLE_USERNAME} !!"
     export SL_ICON="https://raw.githubusercontent.com/hashicorp/terraform/master/website/source/assets/images/logo-static.png"
 else
+    echo $1
     export SL_COLOR="danger"
     export SL_TEXT="*Failed* to terraform planet for ${CIRCLE_BRANCH} (<${CIRCLE_COMPARE_URL}|${SHA1}>) by ${CIRCLE_USERNAME} !!"
     export SL_ICON="http://futalog.com/pic/s/150620/1434796527674.jpg"
