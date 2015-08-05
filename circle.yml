@@ -24,5 +24,6 @@ deployment:
       - |
         echo ${SLACK_HOOK}
         lll
+      - |
         ./tfcheck.sh $?
 
