@@ -6,7 +6,11 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
+echo $1
+
 SHA1=`echo ${CIRCLE_SHA1} | cut -c1-7`
+
+echo $1
 
 if [ $1 -eq 0 ]; then
     export SL_COLOR="good"
