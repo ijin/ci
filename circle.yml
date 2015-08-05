@@ -23,7 +23,7 @@ deployment:
     commands:
       - |
         echo ${SLACK_HOOK}
-        echo 1
+        lll
       - |
         ./tfcheck.sh $?
 
