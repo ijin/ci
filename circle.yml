@@ -22,8 +22,6 @@ deployment:
     branch: master
     commands:
       - |
-        echo ${SLACK_HOOK}
-        lll
-      - |
+        ls
         ./tfcheck.sh $?
 
